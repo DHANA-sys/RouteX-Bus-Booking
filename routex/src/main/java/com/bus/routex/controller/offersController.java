@@ -15,7 +15,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/offers")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://route-x-bus-booking.vercel.app"
+})
 
 public class offersController {
 

@@ -10,7 +10,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/payment")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://route-x-bus-booking.vercel.app"
+})
 
 public class PaymentOrderController {
 

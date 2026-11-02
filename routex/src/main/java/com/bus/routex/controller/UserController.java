@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 
 @RestController
-@CrossOrigin(origins ="http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://route-x-bus-booking.vercel.app"
+})
 @RequestMapping("/api")
 public class UserController {
 

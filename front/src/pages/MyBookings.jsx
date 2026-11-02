@@ -2,34 +2,68 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./MyBookings.css"
 import BackButton from "../components/BackButton";
+import api from "../Services/api";
 
 function MyBookings() {
 
     const [bookings, setBookings] = useState([]);
     const [buses, setBuses] = useState([]);
 
+    // useEffect(() => {
+
+    //     const userId = localStorage.getItem("userId");
+    //     console.log("userId:", userId);
+    //     if (userId) {
+    //         axios.get(`http://localhost:8081/api/bookings/user/${userId}`)
+    //             .then((response) => {
+    //                 setBookings(response.data);
+    //                 console.log("RESPONSE:", response.data)
+    //             })
+
+    //     }
+    // }, []);
+
+
+    // useEffect(() => {
+    //     axios.get("http://localhost:8081/api/buses")
+    //         .then((response) => {
+    //             setBuses(response.data);
+    //             // console.log("BUS RESPONSE:",response.data)
+    //         })
+    // })
+
+
     useEffect(() => {
 
-        const userId = localStorage.getItem("userId");
-        console.log("userId:", userId);
-        if (userId) {
-            axios.get(`http://localhost:8081/api/bookings/user/${userId}`)
-                .then((response) => {
-                    setBookings(response.data);
-                    console.log("RESPONSE:", response.data)
-                })
+    const userId = localStorage.getItem("userId");
 
-        }
-    }, []);
+    console.log("userId:", userId);
 
-
-    useEffect(() => {
-        axios.get("http://localhost:8081/api/buses")
+    if (userId) {
+        api.get(`/bookings/user/${userId}`)
             .then((response) => {
-                setBuses(response.data);
-                // console.log("BUS RESPONSE:",response.data)
+                setBookings(response.data);
+                console.log("RESPONSE:", response.data);
             })
-    })
+            .catch((error) => {
+                console.error("Booking Error:", error);
+            });
+    }
+
+}, []);
+
+
+useEffect(() => {
+
+    api.get("/buses")
+        .then((response) => {
+            setBuses(response.data);
+        })
+        .catch((error) => {
+            console.error("Bus Error:", error);
+        });
+
+}, []);
 
 
     return (

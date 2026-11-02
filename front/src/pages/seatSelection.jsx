@@ -5,6 +5,7 @@ import wheel from "../assets/steering.png";
 import { BusFront, ArrowRight, Clock3 } from "lucide-react"; import "./seatSelection.css";
 import Login from "./Login";
 import BackButton from "../components/BackButton";
+import api from "../Services/api";
 
 function SeatSelection() {
     const { busId } = useParams();
@@ -34,12 +35,17 @@ function SeatSelection() {
             try {
                 setLoading(true);
 
+                // const [seatResponse, busResponse] = await Promise.all([
+                //     axios.get(
+                //         `http://localhost:8081/api/seats/bus/${busId}`
+                //     ),
+                //     axios.get("http://localhost:8081/api/buses")
+                // ]);
+
                 const [seatResponse, busResponse] = await Promise.all([
-                    axios.get(
-                        `http://localhost:8081/api/seats/bus/${busId}`
-                    ),
-                    axios.get("http://localhost:8081/api/buses")
-                ]);
+    api.get(`/seats/bus/${busId}`),
+    api.get("/buses")
+]);
 
                 const sortedSeats = [...seatResponse.data].sort(
                       (a, b) => Number(a.seatNumber) - Number(b.seatNumber)

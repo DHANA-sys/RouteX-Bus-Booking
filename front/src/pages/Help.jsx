@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./help.css";
+import "./Help.css";
 import BackButton from "../components/BackButton";
 
 function Help() {
@@ -38,7 +38,7 @@ function Help() {
 
     return (
         <div className="help-page">
-            <BackButton/>
+            <BackButton />
             <section className="help-hero">
                 <span className="help-label">ROUTEX SUPPORT</span>
 

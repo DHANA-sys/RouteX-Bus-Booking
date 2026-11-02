@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outer-container {
+  width: 90%;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+  position: relative;
+  top: -310px;
+  left: 60px;
+}
+
+.outer-container.buses-search-container {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+  position: relative;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.input-field {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  width: 100%;
+}
+
+.swap-btn {
+  background: #4a4a4a;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.date-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.date-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.date-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.day-text {
+  font-size: 12px;
+  color: #777;
+}
+
+.quick-date-btns {
+  display: flex;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+.pill-btn {
+  border: none;
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.active-pill {
+  background: #fde8e8;
+  color: #d84e55;
+}
+
+.women-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+.avatar {
+  font-size: 20px;
+}
+
+.women-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.know-more {
+  font-size: 11px;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 22px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch input:checked+.slider {
+  background-color: #d84e55;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(18px);
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #d84e55;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -20px;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(216, 78, 85, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Extra Small Devices - Mobile (0 to 575px) */
+@media (max-width: 575.98px) {
+
+    /* Main Container */
+
+    .outer-container {
+        width: 100%;
+        padding: 15px 16px;
+        margin: 0 auto;
+        position: relative;
+        top: -100px;
+        left: 0;
+        border-radius: 0;
+        background: #ffffff;
+    }
+
+    /* Main Search Card */
+
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        background: #ffffff;
+        border: 1px solid #bdbdbd;
+        border-radius: 16px;
+        box-shadow: none;
+        position: relative;
+        overflow: visible;
+    }
+
+    /* From and To */
+
+    .input-group {
+        width: 100%;
+        min-width: 100%;
+        height: 56px;
+        padding: 10px 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label {
+        font-size: 12px;
+        color: #888888;
+    }
+
+    .input-field {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    /* Swap Button */
+
+    .swap-btn {
+        position: absolute;
+        right: 15px;
+        top: 56px;
+        z-index: 5;
+        width: 36px;
+        height: 36px;
+        background: #4a4a4a;
+        color: white;
+        border: 3px solid white;
+        transform: none;
+    }
+
+    /* Date Section */
+
+    .date-group {
+        width: 100%;
+        min-height: 58px;
+        padding: 10px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        gap: 8px;
+    }
+
+    .date-value-row {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .date-text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .day-text {
+        font-size: 12px;
+    }
+
+    .quick-date-btns {
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    .pill-btn {
+        padding: 9px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    /* Women Booking Card */
+
+    .women-group {
+        width: 100%;
+        min-height: 65px;
+        margin-top: 15px;
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #ffffff;
+        border: 1px solid #bdbdbd;
+        border-radius: 16px;
+    }
+
+    .avatar {
+        font-size: 25px;
+    }
+
+    .women-title {
+        font-size: 15px;
+    }
+
+    .know-more {
+        font-size: 12px;
+    }
+
+    .switch {
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    /* Search Button */
+
+    .search-btn {
+        width: 100%;
+        min-height: 49px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        background: #dc3545;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: none;
+    }
+
+}
+
+/* 2. Small Devices - Large Mobile (576px to 767px) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .outer-container {
+        width: 92%;
+        padding: 15px;
+        top: -150px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .input-group {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .swap-btn {
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    .date-group {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        justify-content: space-between;
+    }
+
+    .women-group {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 80%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+/* 3. Medium Devices - Tablets (768px to 991px) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .outer-container {
+        width: 94%;
+        padding: 18px;
+        top: -200px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-group {
+        flex: 1 1 40%;
+        min-width: 180px;
+    }
+
+    .date-group {
+        flex: 1 1 100%;
+        justify-content: space-between;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .women-group {
+        flex: 1 1 100%;
+    }
+
+    .search-btn {
+        margin-top: 10px;
+    }
+}
+
+
+/* 4. Large Devices - Small Laptops (992px to 1199px) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .outer-container {
+        width: 92%;
+        padding: 18px;
+        top: -250px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .input-group {
+        flex: 1;
+        min-width: 120px;
+        padding: 10px;
+    }
+
+    .date-group {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .quick-date-btns {
+        margin-left: 5px;
+    }
+
+    .women-group {
+        padding: 10px;
+    }
+
+    .search-btn {
+        margin-top: -15px;
+    }
+}

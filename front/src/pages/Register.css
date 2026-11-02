@@ -1,0 +1,366 @@
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 35px 20px;
+    background: #070809;
+    color: #E5E7EB;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* Back Button */
+
+.sign-back {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 10;
+}
+
+/* Register Card */
+
+.register-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 38px 35px;
+
+    background: #111315;
+    border: 1px solid #30343A;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Brand */
+
+.register-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.register-brand h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #E5E7EB;
+    letter-spacing: 1px;
+}
+
+.register-brand h1 span {
+    color: #D99A45;
+}
+
+.register-brand p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #737B87;
+    letter-spacing: 0.5px;
+}
+
+/* Heading */
+
+.register-card > h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #E5E7EB;
+    margin-bottom: 9px;
+}
+
+.register-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #9CA3AF;
+    margin-bottom: 28px;
+}
+
+/* Form */
+
+.register-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-card form > label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #D1D5DB;
+    margin-bottom: 9px;
+}
+
+/* Input */
+
+.register-input {
+    width: 100%;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    padding: 0 14px;
+    margin-bottom: 20px;
+
+    background: #090A0B;
+    border: 1px solid #363B42;
+    border-radius: 9px;
+
+    color: #9CA3AF;
+    transition: 0.3s ease;
+}
+
+.register-input:focus-within {
+    border-color: #D99A45;
+    box-shadow: 0 0 0 3px rgba(217, 154, 69, 0.12);
+}
+
+.register-input input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: #E5E7EB;
+    font-size: 14px;
+}
+
+.register-input input::placeholder {
+    color: #737B87;
+}
+
+/* Password Eye */
+
+.register-eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    background: transparent;
+    color: #9CA3AF;
+    border: none;
+    cursor: pointer;
+}
+
+.register-eye:hover {
+    color: #D99A45;
+}
+
+/* Error */
+
+.register-error {
+    color: #F87171;
+    font-size: 13px;
+    margin: 0 0 15px;
+}
+
+/* Register Button */
+
+.register-button {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 5px;
+
+    background: #D99A45;
+    color: #070809;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-button:hover {
+    background: #EAB66F;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(217, 154, 69, 0.2);
+}
+
+/* Login Link */
+
+.register-switch {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+.register-switch a {
+    color: #D99A45;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-switch a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+    .register-container {
+        padding: 85px 15px 30px;
+        align-items: flex-start;
+    }
+
+    .sign-back {
+        top: 18px;
+        left: 15px;
+    }
+
+    .register-card {
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 14px;
+    }
+
+    .register-brand {
+        margin-bottom: 23px;
+    }
+
+    .register-brand h1 {
+        font-size: 30px;
+    }
+
+    .register-card > h2 {
+        font-size: 23px;
+    }
+
+    .register-subtitle {
+        font-size: 13px;
+        margin-bottom: 23px;
+    }
+
+    .register-input {
+        height: 46px;
+        margin-bottom: 17px;
+        padding: 0 11px;
+    }
+
+    .register-input input {
+        font-size: 13px;
+    }
+
+    .register-card form > label {
+        font-size: 13px;
+    }
+
+    .register-button {
+        min-height: 47px;
+        font-size: 14px;
+    }
+
+    .register-switch {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .register-container {
+        padding: 80px 25px 35px;
+    }
+
+    .sign-back {
+        top: 20px;
+        left: 22px;
+    }
+
+    .register-card {
+        max-width: 440px;
+        padding: 32px 28px;
+    }
+
+    .register-brand h1 {
+        font-size: 33px;
+    }
+
+    .register-card > h2 {
+        font-size: 25px;
+    }
+
+    .register-input {
+        height: 48px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .register-container {
+        padding: 75px 35px 35px;
+    }
+
+    .sign-back {
+        top: 25px;
+        left: 25px;
+    }
+
+    .register-card {
+        max-width: 460px;
+        padding: 35px 32px;
+    }
+
+    .register-brand h1 {
+        font-size: 35px;
+    }
+
+    .register-card > h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .register-container {
+        padding: 40px 30px;
+    }
+
+    .sign-back {
+        top: 25px;
+        left: 30px;
+    }
+
+    .register-card {
+        max-width: 450px;
+        padding: 36px 32px;
+    }
+
+}

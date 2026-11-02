@@ -1,0 +1,184 @@
+
+.why-routex {
+    width: 100%;
+    padding: 90px 7%;
+    background: #070809;
+    color: #E5E7EB;
+    margin-top: -50px;
+}
+
+.why-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.why-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.why-subtitle {
+    color: #D99A45;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.why-heading h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.why-heading h2 span {
+    color: #D99A45;
+}
+
+.why-heading p {
+    color: #9299A3;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    position: relative;
+    padding: 32px 25px;
+    min-height: 235px;
+    background: #111315;
+    border: 1px solid #25282C;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    border-color: #D99A45;
+}
+
+.why-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(217, 154, 69, 0.12);
+    color: #D99A45;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.why-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 1.8;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #E5E7EB;
+}
+
+.why-card p {
+    color: #9299A3;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.why-number {
+    position: absolute;
+    right: 18px;
+    bottom: 8px;
+    color: rgba(229, 231, 235, 0.06);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .why-routex {
+        padding: 60px 5%;
+    }
+
+    .why-heading {
+        margin-bottom: 35px;
+    }
+
+    .why-heading h2 {
+        font-size: 28px;
+    }
+
+    .why-heading p {
+        font-size: 13px;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .why-card {
+        min-height: 200px;
+        padding: 25px 22px;
+    }
+}
+
+/* Large Mobile / Small Tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .why-routex {
+        padding: 65px 5%;
+    }
+
+    .why-heading h2 {
+        font-size: 32px;
+    }
+
+    .why-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .why-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .why-routex {
+        padding: 75px 5%;
+    }
+
+    .why-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Small Laptop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .why-routex {
+        padding: 80px 5%;
+    }
+
+    .why-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+
+    .why-card {
+        padding: 25px 18px;
+    }
+
+    .why-card h3 {
+        font-size: 16px;
+    }
+}

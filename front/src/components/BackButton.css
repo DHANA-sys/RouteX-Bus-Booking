@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 100;
+    padding: 10px 18px;
+
+    background: transparent;
+    color: #E5E7EB;
+
+    border: 1px solid #000205;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    background: #D99A45;
+    color: #070809;
+    border-color: #D99A45;
+}

@@ -1,0 +1,274 @@
+
+.popular-routes {
+    width: 100%;
+    padding: 90px 7%;
+    background: #0D1013;
+    color: #E5E7EB;
+    margin-top: -285px;
+}
+
+.popular-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.popular-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popular-heading > span {
+    color: #D99A45;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.popular-heading h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.popular-heading h2 strong {
+    color: #D99A45;
+}
+
+.popular-heading p {
+    color: #9299A3;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.popular-card {
+    background: #15191D;
+    border: 1px solid #292F35;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.popular-card:hover {
+    transform: translateY(-7px);
+    border-color: #D99A45;
+}
+
+.popular-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.popular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.popular-card:hover .popular-image img {
+    transform: scale(1.07);
+}
+
+.popular-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent 50%,
+        rgba(0, 0, 0, 0.55)
+    );
+}
+
+.popular-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #D99A45;
+    color: #111;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 7px 11px;
+    border-radius: 4px;
+}
+
+.popular-card-content {
+    padding: 22px;
+}
+
+.popular-route-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.popular-route-name span {
+    color: #9299A3;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.popular-route-name h3 {
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+.route-arrow {
+    color: #D99A45;
+    width: 20px;
+}
+
+.popular-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding-top: 17px;
+    border-top: 1px solid #292F35;
+}
+
+.popular-price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #9299A3;
+    font-size: 11px;
+}
+
+.popular-price svg {
+    color: #D99A45;
+    flex-shrink: 0;
+}
+
+.popular-card-bottom button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: transparent;
+    border: 1px solid #D99A45;
+    border-radius: 5px;
+    padding: 9px 12px;
+    color: #D99A45;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.popular-card-bottom button:hover {
+    background: #D99A45;
+    color: #101010;
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .popular-routes {
+        padding: 60px 5%;
+        margin-top: 270px;
+    }
+
+    .popular-heading {
+        margin-bottom: 35px;
+    }
+
+    .popular-heading h2 {
+        font-size: 28px;
+    }
+
+    .popular-heading p {
+        font-size: 13px;
+    }
+
+    .popular-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .popular-image {
+        height: 190px;
+    }
+
+    .popular-card-content {
+        padding: 20px;
+    }
+}
+
+/* Large Mobile / Small Tablet */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .popular-routes {
+        padding: 70px 5%;
+        margin-top: 270px;
+    }
+
+    .popular-heading h2 {
+        font-size: 32px;
+    }
+
+    .popular-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .popular-image {
+        height: 165px;
+    }
+
+    .popular-card-content {
+        padding: 17px;
+    }
+
+    .popular-route-name h3 {
+        font-size: 14px;
+    }
+
+    .popular-price {
+        font-size: 10px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .popular-routes {
+        padding: 80px 5%;
+        margin-top: 80px;
+    }
+
+    .popular-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .popular-image {
+        height: 190px;
+    }
+}
+
+/* Small Laptop */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .popular-routes {
+        padding: 85px 5%;
+    }
+
+    .popular-grid {
+        gap: 17px;
+    }
+
+    .popular-card-content {
+        padding: 18px;
+    }
+
+    .popular-route-name h3 {
+        font-size: 15px;
+    }
+}

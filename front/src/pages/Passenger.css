@@ -1,0 +1,414 @@
+.all {
+    min-height: 100vh;
+    padding: 45px 20px;
+    background: #070809;
+    color: #E5E7EB;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main Heading */
+
+.all-h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #E5E7EB;
+}
+
+/* Total Passenger Text */
+
+.all-p {
+    text-align: center;
+    color: #737B87;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+
+
+
+.passe-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 28px;
+
+    background: #111315;
+    border: 1px solid #292D32;
+    border-radius: 16px;
+
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.passe-card h3,
+.passe-card p {
+    grid-column: 1 / -1;
+}
+
+.passe-card p {
+    margin-bottom: 0;
+}
+
+.passe-card:hover {
+    border-color: #D99A45;
+    transform: translateY(-2px);
+}
+
+/* Passenger Heading */
+
+.passe-card h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #D99A45;
+    margin: 0 0 12px;
+}
+
+/* Seat Number */
+
+.passe-card p {
+    font-size: 14px;
+    color: #9CA3AF;
+    margin-bottom: 25px;
+}
+
+/* Input Field Container */
+
+/* .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+} */
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    min-width: 0;
+}
+
+/* Labels */
+
+.passe-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #D1D5DB;
+    margin-bottom: 9px;
+}
+
+/* Input and Select */
+
+.passe-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    background: #090A0B;
+    border: 1px solid #363B42;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+
+    color: #E5E7EB;
+    font-size: 14px;
+
+    transition: border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Placeholder */
+
+.passe-input::placeholder {
+    color: #737B87;
+}
+
+/* Focus Effect */
+
+.passe-input:focus {
+    border-color: #D99A45;
+    box-shadow: 0 0 0 3px rgba(217, 154, 69, 0.12);
+}
+
+/* Dropdown Options */
+
+.passe-input option {
+    background: #111315;
+    color: #E5E7EB;
+}
+
+/* Total Amount Section */
+
+.passe-total {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 28px;
+    background: #111315;
+    border: 1px solid #363B42;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+/* Total Passenger */
+
+.passe-total h3 {
+    color: #9CA3AF;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 18px;
+}
+
+/* Total Price */
+
+.passe-total h2 {
+    color: #D99A45;
+    font-size: 28px;
+    margin: 0 0 25px;
+}
+
+/* Proceed to Payment Button */
+
+.payment-btn {
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 20px;
+
+    background: #D99A45;
+    color: #070809;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.payment-btn:hover {
+    background: #EAB66F;
+    box-shadow: 0 5px 20px rgba(217, 154, 69, 0.2);
+    transform: translateY(-2px);
+}
+
+.payment-btn:active {
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   MOBILE - BELOW 576px
+===================================== */
+
+@media (max-width: 575.98px) {
+
+    .all {
+        padding: 25px 14px 35px;
+    }
+
+    .all-h2 {
+        font-size: 25px;
+        margin-bottom: 9px;
+    }
+
+    .all-p {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .passe-card {
+        padding: 18px 15px;
+        margin-bottom: 18px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        border-radius: 13px;
+    }
+
+    .passe-card h3 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .passe-card p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .passe-label {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+
+    .passe-input {
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .passe-total {
+        margin-top: 22px;
+        padding: 20px 16px;
+        border-radius: 13px;
+    }
+
+    .passe-total h3 {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+
+    .passe-total h2 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .payment-btn {
+        min-height: 47px;
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+
+/* =====================================
+   SMALL TABLET - 576px to 767px
+===================================== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .all {
+        padding: 35px 22px 45px;
+    }
+
+    .all-h2 {
+        font-size: 29px;
+    }
+
+    .all-p {
+        margin-bottom: 28px;
+    }
+
+    .passe-card {
+        max-width: 600px;
+        padding: 22px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+    }
+
+    .passe-card h3,
+    .passe-card p {
+        grid-column: 1 / -1;
+    }
+
+    .passe-card h3 {
+        font-size: 20px;
+    }
+
+    .passe-input {
+        height: 47px;
+    }
+
+    .passe-total {
+        max-width: 600px;
+        padding: 24px;
+    }
+
+    .passe-total h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* =====================================
+   TABLET - 768px to 991px
+===================================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .all {
+        padding: 38px 28px 50px;
+    }
+
+    .all-h2 {
+        font-size: 31px;
+    }
+
+    .passe-card {
+        max-width: 750px;
+        padding: 25px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .passe-card h3,
+    .passe-card p {
+        grid-column: 1 / -1;
+    }
+
+    .passe-input {
+        height: 48px;
+    }
+
+    .passe-total {
+        max-width: 650px;
+    }
+}
+
+
+/* =====================================
+   SMALL LAPTOP - 992px to 1199px
+===================================== */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .all {
+        padding: 40px 35px 55px;
+    }
+
+    .passe-card {
+        max-width: 850px;
+        padding: 26px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .passe-card h3,
+    .passe-card p {
+        grid-column: 1 / -1;
+    }
+
+    .passe-total {
+        max-width: 650px;
+    }
+}

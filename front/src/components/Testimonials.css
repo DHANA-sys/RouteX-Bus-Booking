@@ -1,0 +1,363 @@
+.customer-testimonials {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    padding: 85px 6%;
+    color: #E5E7EB;
+    /* background-image: url("./images/Routex/RouteX Luxury Sleeper Cabin.png"); */
+    background-image: url("/images/RouteX%20Luxury%20Sleeper%20Cabin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.testimonial-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.customer-testimonial-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Heading */
+
+.customer-testimonial-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.testimonial-label {
+    color: #D99A45;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.customer-testimonial-heading h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.customer-testimonial-heading h2 strong {
+    color: #D99A45;
+}
+
+.customer-testimonial-heading p {
+    color: #D0D0D0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Review Cards */
+
+.customer-review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.customer-review-card {
+    min-width: 0;
+    padding: 27px 25px;
+    background: rgba(10, 12, 14, 0.78);
+    border: 1px solid rgba(217, 154, 69, 0.35);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.customer-review-card:hover {
+    transform: translateY(-7px);
+    border-color: #D99A45;
+    background: rgba(10, 12, 14, 0.9);
+}
+
+/* Customer Profile */
+
+.customer-review-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-profile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.customer-avatar {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D99A45;
+    color: #101010;
+    border: 2px solid #D99A45;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.customer-details h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.customer-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #B9B9B9;
+    font-size: 13px;
+}
+
+.customer-details span svg {
+    color: #D99A45;
+}
+
+.customer-quote-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    color: #D99A45;
+    fill: #D99A45;
+}
+
+/* Stars */
+
+.customer-stars {
+    display: flex;
+    gap: 5px;
+    color: #D99A45;
+    margin: 23px 0 15px;
+}
+
+/* Review Text */
+
+.customer-review-text {
+    color: #D2D2D2;
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+    min-height: 76px;
+}
+
+/* Pagination */
+
+.testimonial-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.pagination-line {
+    height: 1px;
+    flex: 1;
+    background: rgba(217, 154, 69, 0.4);
+}
+
+.testimonial-arrow {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #D99A45;
+    border-radius: 50%;
+    background: transparent;
+    color: #D99A45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.testimonial-arrow:hover {
+    background: #D99A45;
+    color: #101010;
+}
+
+.testimonial-dots {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.testimonial-dot {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+    background: #777777;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.testimonial-dot.active {
+    background: #D99A45;
+    transform: scale(1.2);
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .customer-testimonials {
+        padding: 65px 5%;
+        min-height: auto;
+        background-position: center;
+    }
+
+    .customer-testimonial-heading {
+        margin-bottom: 35px;
+    }
+
+    .testimonial-label {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .customer-testimonial-heading h2 {
+        font-size: 27px;
+    }
+
+    .customer-testimonial-heading p {
+        font-size: 13px;
+    }
+
+    .customer-review-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .customer-review-card {
+        padding: 23px 19px;
+    }
+
+    .customer-avatar {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 21px;
+    }
+
+    .customer-details h3 {
+        font-size: 15px;
+    }
+
+    .customer-review-text {
+        font-size: 13px;
+        min-height: auto;
+    }
+
+    .testimonial-pagination {
+        gap: 12px;
+        margin-top: 35px;
+    }
+
+    .testimonial-arrow {
+        width: 38px;
+        height: 38px;
+    }
+
+    .testimonial-dots {
+        gap: 9px;
+    }
+
+    .pagination-line {
+        min-width: 10px;
+    }
+}
+
+/* Large Mobile / Small Tablet */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .customer-testimonials {
+        padding: 70px 5%;
+    }
+
+    .customer-testimonial-heading h2 {
+        font-size: 32px;
+    }
+
+    .customer-review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+    }
+
+    .customer-review-card {
+        padding: 22px 18px;
+    }
+
+    .customer-review-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .customer-review-text {
+        min-height: auto;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .customer-testimonials {
+        padding: 80px 5%;
+    }
+
+    .customer-testimonial-heading h2 {
+        font-size: 35px;
+    }
+
+    .customer-review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .customer-review-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .customer-review-text {
+        min-height: auto;
+    }
+}
+
+/* Small Laptop */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .customer-testimonials {
+        padding: 85px 5%;
+    }
+
+    .customer-review-grid {
+        gap: 17px;
+    }
+
+    .customer-review-card {
+        padding: 23px 18px;
+    }
+
+    .customer-avatar {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+    }
+
+    .customer-details h3 {
+        font-size: 15px;
+    }
+}

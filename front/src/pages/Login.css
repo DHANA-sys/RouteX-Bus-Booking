@@ -1,0 +1,541 @@
+/* Main Background
+
+
+:root{
+    --premium-bg:
+    radial-gradient(circle at top left, rgba(0, 180, 225, 0.25) , transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 180, 225, 0.20) 0, transparent 35%),
+    #080808;
+}
+
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  background:
+    radial-gradient(circle at top left, rgba(0, 180, 225, 0.25) , transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 180, 225, 0.20) 0, transparent 35%),
+    #080808;
+
+  font-family: Arial, sans-serif;
+  color: #f8fafc;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  
+  background: rgba(7, 20, 40, 0.10);
+  
+  border: 1px solid #203b60 ;
+  border-radius: 20px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.login-back{
+    position: relative;
+    top: -280px;
+    left: -390px;
+}
+.brand h1 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-left: -50px;
+}
+
+.brand h1 span {
+  position: absolute;
+  top: 41px;
+  font-size: 70px;
+  color: #168bff;
+}
+
+.brand p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9db3d0;
+}
+
+
+.auth-card h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #9db3d0;
+  font-size: 14px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  font-size: 13px;
+  margin-bottom: 9px;
+  color: #d9e5f5;
+}
+
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 52px;
+  padding: 0 14px;
+  margin-bottom: 22px;
+
+  background: #08162a;
+  border: 1px solid #294568;
+  border-radius: 10px;
+
+  color: #94b4db;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-box:focus-within {
+  border-color: #168bff;
+  box-shadow: 0 0 0 3px rgba(22, 139, 255, 0.12);
+}
+
+.input-box input {
+  flex: 1;
+  min-width: 0;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: #7086a4;
+}
+
+
+.eye-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+  border: none;
+  background: transparent;
+
+  color: #94b4db;
+  cursor: pointer;
+}
+
+.eye-button:hover {
+  color: #168bff;
+}
+
+
+.error {
+  color: #ff8585;
+  font-size: 13px;
+  margin: -8px 0 14px;
+  line-height: 1.5;
+}
+
+
+.auth-button {
+  width: 100%;
+  height: 52px;
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(100deg, #0866f5, #00a7f5);
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.auth-button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.auth-button:active {
+  transform: translateY(0);
+}
+
+
+.switch-text {
+  text-align: center;
+  color: #9db3d0;
+  font-size: 13px;
+  margin-top: 25px;
+  line-height: 1.7;
+}
+
+.switch-text a {
+  color: #24a3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 16px;
+  }
+
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .brand h1 {
+    font-size: 32px;
+  }
+
+  .auth-card h2 {
+    font-size: 24px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   LOGIN PAGE - MAIN DESIGN
+================================ */
+
+.auth-container {
+    min-height: 100vh;
+    width: 100%;
+    background: #070809;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.login-back {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 2;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    background: #111315;
+    border: 1px solid #292d32;
+    border-radius: 18px;
+    padding: 42px 38px;
+    color: #E5E7EB;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.brand h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #E5E7EB;
+}
+
+.brand h1 span {
+    color: #D99A45;
+}
+
+.brand p {
+    color: #737B87;
+    font-size: 13px;
+    margin-top: 7px;
+    letter-spacing: 0.5px;
+}
+
+.auth-card h2 {
+    font-size: 26px;
+    margin: 0 0 8px;
+    color: #E5E7EB;
+}
+
+.subtitle {
+    color: #858C96;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-card label {
+    color: #D1D5DB;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    background: #191c20;
+    border: 1px solid #343940;
+    border-radius: 9px;
+    color: #9299A3;
+    transition: 0.25s ease;
+}
+
+.input-box:focus-within {
+    border-color: #D99A45;
+    box-shadow: 0 0 0 2px rgba(217, 154, 69, 0.12);
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #E5E7EB;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: #737B87;
+}
+
+.eye-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #9299A3;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.eye-button:hover {
+    color: #D99A45;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.auth-button {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #D99A45;
+    color: #111315;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.auth-button:hover {
+    background: #e9ad5d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(217, 154, 69, 0.2);
+}
+
+.switch-text {
+    text-align: center;
+    color: #858C96;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.switch-text a {
+    color: #D99A45;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===============================
+   MOBILE - BELOW 576px
+================================ */
+
+@media (max-width: 575.98px) {
+
+    .auth-container {
+        padding: 85px 18px 30px;
+        align-items: center;
+    }
+
+    .login-back {
+        top: 20px;
+        left: 18px;
+    }
+
+    .auth-card {
+        max-width: 100%;
+        padding: 30px 22px;
+        border-radius: 14px;
+    }
+
+    .brand {
+        margin-bottom: 26px;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .auth-card h2 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        margin-bottom: 23px;
+    }
+
+    .input-box {
+        height: 48px;
+        padding: 0 12px;
+    }
+
+    .auth-button {
+        height: 48px;
+    }
+
+    .switch-text {
+        font-size: 13px;
+    }
+}
+
+
+/* ===============================
+   SMALL TABLET - 576px to 767px
+================================ */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .auth-container {
+        padding: 80px 25px 35px;
+    }
+
+    .login-back {
+        top: 25px;
+        left: 25px;
+    }
+
+    .auth-card {
+        max-width: 420px;
+        padding: 35px 32px;
+    }
+
+    .brand h1 {
+        font-size: 33px;
+    }
+
+    .auth-card h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* ===============================
+   TABLET - 768px to 991px
+================================ */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .auth-container {
+        padding: 45px 30px;
+    }
+
+    .login-back {
+        top: 30px;
+        left: 30px;
+    }
+
+    .auth-card {
+        max-width: 440px;
+        padding: 40px 35px;
+    }
+}
+
+
+/* ===============================
+   SMALL LAPTOP - 992px to 1199px
+================================ */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .auth-container {
+        padding: 40px 35px;
+    }
+
+    .auth-card {
+        max-width: 440px;
+    }
+}
